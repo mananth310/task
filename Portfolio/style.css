@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+.header{
+    padding: 20px;
+    height: 200vh;
+    width: 100%;
+    background-image: url(back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+nav img{
+    width: 50px;
+    border-radius: 50px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav ul li a:hover{
+    color:brown;
+}
+.content{
+    position: absolute;
+    top:25%;
+    left: 10%;
+}
+.about{
+    background-color: black;
+    width: 100%;
+    padding: 10px 30px ;
+    height: 70vh;
+    padding-top: 80px;
+}
+.about-text h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h4{
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: rgb(177,240,240);
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+button{
+    background-color: purple;
+    color:white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bolder;
+    padding: 13px 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.main{
+    width: 1000px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+}
+.main img{
+    width: 150px;
+    border:5px solid white;
+    /* border-radius: 150px; */
+}
+.skill{
+    background-color: black;
+    text-align: center;
+    height: 70vh;
+    width: 100%; 
+    display: grid;
+    place-items: center;
+    /* position: relative;  */
+    margin: auto;
+}
+.container{
+    display: flex;
+    animation: scroll 60s linear infinite;
+    gap: 20px; 
+}
+#skillSec{
+    background-color: black;
+    text-align: center;
+    padding-top: 100px;
+}
+.card{
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.card:nth-child(odd){
+    background: linear-gradient(-229deg,green,blue);
+}
+.card:nth-child(even){
+    background: linear-gradient(-229deg,red,lightgray);
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*5));
+    }
+    
+}
+.box{
+    height: 100vh;
+    background-color: black;
+    padding-top: 100px;
+}
+.box h1{
+    text-align: center;
+}
+.project{
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.test{
+    height: 360px;
+    width: 330px;
+    padding: 30px 20px;
+    background-color: purple;
+    margin: 15px;
+    border-radius:30px ;
+ }
+ .test img{
+    width:290px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+ }
+ .test h5{
+    text-align: center;
+    font-size: 15pt;
+    line-height: 20px;
+}
+.paragraph p{
+    text-align: justify;
+}
+.contact{
+    color:white;
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+
+}
+.contact-box{
+    background-color: white;
+    display: flex;
+    
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px ;
+    color:black;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: pink;
+}
+.contact h1{
+    margin-bottom: 10px;
+    text-align: center;
+} 
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+label{
+    color:black;
+    margin-bottom: 5px;
+    display: block;
+}
+.input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: blue;
+}
+.contact-left h4{
+    color: navy;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-right h3{
+    color: purple;
+    text-align: center;
+    margin-bottom: 20px;
+}
+table tr td{
+    color: purple;
+}
+tr td:nth-child(odd){
+    width: 30%;
+    padding-bottom: 20px;
+}
+tr td:nth-child(even){
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
